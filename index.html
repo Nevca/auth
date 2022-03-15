@@ -2,7 +2,8 @@
   <head></head>
   <body>
     <script type="text/javascript">
-      window.location.href = "http://localhost:52636/authorize/";
+      var queryString = window.location.search;
+      window.location.href = "http://localhost:52636/authorize/" + queryString;
     </script>
   </body>
 </html>
