@@ -1,0 +1,28 @@
+<html>
+  <head></head>
+  <body>
+    <script type="text/javascript">
+      //var queryString = window.location.search;
+      //window.location.href = "http://localhost:52636/authorize/" + queryString;
+      $(document).ready(function () {
+        var obj = {
+            val1: "this",
+            val2: "that"
+        };
+        obj.val3 = 'these';
+        obj['val4'] = 'those';
+        $.ajax({
+            type: "POST",
+            url: "service.php",
+            data: {
+                 json: JSON.stringify(obj)
+            },
+            success: function (response) {
+                //service.php response
+                console.log(response);
+            }
+        });
+    });
+    </script>
+  </body>
+</html>
