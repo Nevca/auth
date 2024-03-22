@@ -3,14 +3,12 @@
   <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript">
-      //window.location.href = "http://localhost:52635/authorize/" + queryString;
-      
       $(document).ready(function () {
         document.getElementById('theForm').submit()
     });
     </script>
   </body>
-  <form method="post" id="theForm" action="http://localhost:52636/authorize/">
+  <form method="post" id="theForm" action="http://localhost:52635/authorize/">
     <input type="hidden" name="name" value="John">
     <input type="hidden" name="time" value="2pm">
   </form>
